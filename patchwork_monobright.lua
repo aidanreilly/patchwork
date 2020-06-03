@@ -1,5 +1,6 @@
 --
--- PATCHWORK (v1.0.1)
+-- PATCHWORK (v1.0.1 monobright edit) 
+-- monobright tweaks by oootini
 --
 -- Dual sequencer for
 -- norns, grid + crow
@@ -264,9 +265,9 @@ function intclk()
     if activeSeq == 0 then
       for i=1,length[1] do
         if gridMode[1] == 0 then
-          g:led(i,9-pattern[1][i],i==position[1] and 15 or 4)
+          g:led(i,9-pattern[1][i],i==position[1] and 4 or 15)
         else
-          g:led(i,9-step[1][i],i==position[1] and 15 or 3)
+          g:led(i,9-step[1][i],i==position[1] and 3 or 15)
         end
       end
       g:refresh()
@@ -276,9 +277,9 @@ function intclk()
     if activeSeq == 1 then
       for i=1,length[2] do
         if gridMode[2] == 0 then
-          g:led(i,9-pattern[2][i],i==position[2] and 15 or 4)
+          g:led(i,9-pattern[2][i],i==position[2] and 4 or 15)
         else
-          g:led(i,9-step[2][i],i==position[2] and 15 or 3)
+          g:led(i,9-step[2][i],i==position[2] and 3 or 15)
         end
       end
       g:refresh()

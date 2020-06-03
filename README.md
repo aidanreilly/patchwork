@@ -1,5 +1,7 @@
 # Patchwork
 
+**monobright grid edit**
+
 Patchwork is a dual function sequencer for monome norns, crow and grid. Each sequence has both a note pattern and a command pattern. A command fires when the sequence reaches its position. Commands manipulate the sequences. Think octave and position jumping, direction changes, new notes, sequence syncing, etc. 
 
 The grid has two modes: `NOTES` and `COMMANDS` (you'll see an indication of what mode you're in on norns' screen). Use the former to edit your note pattern, the latter to edit your command pattern. 
